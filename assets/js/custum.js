@@ -54,16 +54,10 @@ document.getElementById("fileInput").onchange = function () {
 	document.getElementById("file-name").innerHTML = this.value;
 };
 
-const checkButtons = document.querySelectorAll(".check-button");
-console.log(checkButtons);
+const inputCheck = document.querySelectorAll(".input-check");
+console.log(inputCheck);
 
-checkButtons.forEach((item, index) => {
+inputCheck.forEach((item) => {
 	const colParent = item.closest(".col-lg-6");
 	colParent ? colParent.classList.add("padding-bottom") : null;
-
-	index === 5 ? item.classList.add("bg-warning") : null;
 });
-
-document
-	.querySelectorAll(".check-button")[1]
-	.classList.add("this-is-legasy-code");
