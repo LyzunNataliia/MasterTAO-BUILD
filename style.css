@@ -192,7 +192,7 @@ fieldset .input-check:not(:last-child) {
 }
 
 .input-check {
-  margin-bottom: 6px;
+  margin-bottom: 12px;
   padding-left: 2px;
   position: relative;
 }
@@ -207,7 +207,7 @@ input[type=checkbox]:checked + label::before {
 input[type=checkbox] + label {
   display: flex;
   align-items: center;
-  padding-left: 30px;
+  padding-left: 34px;
 }
 input[type=checkbox] + label::before {
   content: "";
@@ -218,6 +218,7 @@ input[type=checkbox] + label::before {
   height: 24px;
   display: inline-block;
   transition: 0.3s;
+  transform: translateX(2px);
   border: 1px solid #282b38;
   border-radius: 4px;
   background-color: #ffffff;
@@ -663,12 +664,18 @@ header .hamburger--spin.is-active .hamburger-inner::after {
   padding-left: 15px;
 }
 .calculation label[for=fileInput] {
-  width: calc(100% - 5px);
+  width: calc(100% - 4px);
   border-radius: 10px;
   border: 1px dashed rgba(255, 255, 255, 0.2588235294);
   text-align: center;
-  padding: 11px 10px;
-  margin: 35px auto 7px auto;
+  padding: 10px 10px;
+  margin: 34px auto 7px auto;
+}
+.calculation-decoration {
+  margin-left: -27px;
+  margin-top: -178px;
+  width: 100%;
+  min-width: calc(100% + 30px);
 }
 
 #fileInput {
@@ -682,7 +689,7 @@ header .hamburger--spin.is-active .hamburger-inner::after {
 }
 
 .padding-bottom {
-  margin-top: 26px;
+  margin-top: 22px;
 }
 
 .advanage-row {
@@ -738,7 +745,7 @@ header .hamburger--spin.is-active .hamburger-inner::after {
 @media (min-width: 992px) {
   .calculation {
     overflow-x: clip;
-    margin-bottom: 118px;
+    margin-bottom: 0;
   }
   .calculation-form {
     min-width: 625px;
@@ -813,6 +820,22 @@ header .hamburger--spin.is-active .hamburger-inner::after {
     background-color: #363a4d;
     transform: translate(0, 16px);
   }
+  .template-title {
+    margin-bottom: 45px;
+  }
+  .template-title h2 {
+    text-align: center;
+  }
+  .template-title.col-lg-7 {
+    margin-bottom: 55px;
+  }
+  .template-title.col-lg-7 h2:after {
+    position: absolute;
+    left: 50%;
+    margin: 0;
+    bottom: -1px;
+    transform: translate(-50%, 0);
+  }
   .advantage-title {
     padding: 0 20px;
     font-weight: 400;
@@ -873,6 +896,28 @@ header .hamburger--spin.is-active .hamburger-inner::after {
     border-radius: 0;
     left: 0;
     right: 0;
+  }
+  .calculation-form {
+    padding: 50px 26px 15px;
+    margin: 0 auto;
+  }
+  .calculation-form .btn {
+    max-width: 275px;
+    width: calc(100% - 10px);
+    margin: 0 auto;
+  }
+  .calculation-form .btn .icon {
+    margin: 0px -20px 0 64px;
+  }
+  .calculation-decoration {
+    display: none;
+  }
+  .padding-bottom {
+    margin-top: 8px;
+    margin-bottom: -17px;
+  }
+  .input-check {
+    margin-bottom: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */
