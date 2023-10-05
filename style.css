@@ -485,14 +485,6 @@ ul.slick-dots button {
   color: #cbcbcb;
 }
 
-.padding {
-  padding-top: 21px; /*для .input-column */
-}
-
-.has-checkbox {
-  margin-bottom: 6px; /*для input-box*/
-}
-
 header .navbar {
   padding: 21px 0 34px;
 }
