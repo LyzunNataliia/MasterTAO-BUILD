@@ -734,6 +734,147 @@ header .hamburger--spin.is-active .hamburger-inner::after {
   margin: 15px 0;
 }
 
+.delivery {
+  position: relative;
+}
+.delivery .card-img-box {
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+  height: 229px;
+}
+.delivery .card-img-box img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  object-position: center;
+}
+
+.services .card-img-box {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  z-index: 0;
+}
+.services .card-img-box:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(0deg, rgba(4, 5, 17, 0.91) 0%, rgba(88, 88, 88, 0) 100%);
+}
+.services .card-title,
+.services .card-description,
+.services .btn-row {
+  z-index: 1;
+}
+.services .card {
+  justify-content: flex-end;
+  text-align: left;
+}
+
+.card-description {
+  margin-bottom: 14px;
+}
+
+.carousel-template {
+  margin: 0 -15px;
+}
+.carousel-template .slide-item {
+  padding: 0 15px;
+}
+.carousel-template .slick-dots {
+  margin-top: 32px;
+}
+.carousel-template .slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.carousel-template .slick-prev {
+  left: -77px;
+  z-index: 1;
+  transform: translate(0, -50%) rotate(180deg);
+}
+.carousel-template .slick-next {
+  right: -77px;
+}
+
+.card-img-box {
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0 -20px 27px;
+}
+
+.card {
+  background-color: #363a4d;
+  border-radius: 20px;
+  height: 482px;
+  max-width: 360px;
+  padding: 0 20px 27px;
+  text-align: center;
+  border: none;
+  color: #ffffff;
+}
+.card-title {
+  margin-bottom: 12px;
+}
+.card-options {
+  display: flex;
+  justify-content: space-between;
+  max-width: 210px;
+  width: 100%;
+  margin: 0 auto 8px;
+}
+.card-options-item {
+  display: flex;
+  align-items: center;
+}
+.card-options-item img {
+  margin-right: 8px;
+  max-width: 24px;
+  max-height: 24px;
+}
+.card-price {
+  margin-bottom: 22px;
+}
+.card-price span:first-child {
+  color: #a3a3a3;
+  text-align: center;
+  font-family: Proxima Nova;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 124.5%;
+}
+.card-price span:last-child {
+  color: #fff;
+  font-family: Proxima Nova;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 124.5%;
+}
+.card-price strong {
+  color: #fff;
+  font-family: Proxima Nova;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 124.5%;
+}
+.card .btn-row {
+  display: flex;
+  justify-content: space-between;
+}
+.card .btn-row .btn {
+  width: 153px;
+  padding: 13px 10px;
+  text-align: center;
+  justify-content: center;
+}
+
 @media (min-width: 992px) {
   .calculation {
     overflow-x: clip;
@@ -910,6 +1051,11 @@ header .hamburger--spin.is-active .hamburger-inner::after {
   }
   .input-check {
     margin-bottom: 12px;
+  }
+}
+@media screen and (max-width: 955px) {
+  .carousel-template {
+    max-width: 390px;
   }
 }
 /*# sourceMappingURL=style.css.map */
